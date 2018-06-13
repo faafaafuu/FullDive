@@ -10,7 +10,7 @@ function WaterAndBottle(red, blue) {
     while (i < blue.length && j < red.length) {
         if (red[j] > blue[i]) {
 
-            stats.push(({['Bottle ' + i +' from']: j+1 , total: blue[i]}));
+            stats.push({['Bottle ' + i +' from']: j+1 , total: blue[i]});
             red[j] = red[j] - blue[i];
             i++;
         } else {
